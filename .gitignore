@@ -8,3 +8,5 @@
 /dist
 /SMART
 /__pycache__
+Setup.py
+*.xlsx
