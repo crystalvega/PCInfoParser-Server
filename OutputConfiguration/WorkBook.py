@@ -115,5 +115,5 @@ def close():
             wb.save(filename = fileName)
             break
         except PermissionError:
-            print('Файл XLSX открыт, либо уже обрабатывается. Повтор записи данных через 5 секунды')
-            sleep(5)
+            print('Файл XLSX открыт, либо уже обрабатывается. Повтор попытки записи данных через 1 секунду')
+            sleep(1)

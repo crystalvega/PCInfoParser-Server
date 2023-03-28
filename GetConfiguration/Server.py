@@ -5,7 +5,10 @@ from _thread import *
 import asyncio
 
 import mysql.connector
-from Crypto.Cipher import AES
+try:
+    from Crypto.Cipher import AES
+except ModuleNotFoundError:
+    from Cryptodome.Cipher import AES
 
 from GetConfiguration import API
 from OutputConfiguration import MySQL
